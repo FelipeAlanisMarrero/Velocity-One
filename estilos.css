@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Limelight&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+}
+h1{
+    font-family: "Limelight", sans-serif;
+}
+#Portada{
+    min-height: 100vh;
+    background-image: url(img/d-panyukov-YKF2FrwgGUE-unsplash.jpg);
+    background-size: cover;
+    background-position: top left 52%;
+    background-blend-mode: lighten;
+    position: relative;
+}
+#negro{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header{
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(129, 3, 3, 0.527);
+    position: relative;
+}
+#logo{
+    color: rgb(255, 255, 255);
+    font-family: "Fraunces", serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+    #textos{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        height: 70vh;
+        align-content: center;
+        position: relative;
+}
+#textos a{
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 30px;
+        border-radius: 2em;
+        margin-top: 1.5em;
+}
+#ctp1{
+    border: 1px solid white;
+    color: white;
+}
+#ctp2{
+    border: 1px solid transparent;
+    color: black;
+    background-color: white;
+    
+}
+h1{
+    font-size: 2.5em;
+}
+/* TABLET */
+@media all and (min-width:768px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1{
+        font-size: 4em;
+        font-weight: lighter;
+    }
+    h2{
+        font-size: 2em;
+        position: relative;
+        left: 14em;
+        top: -0.4em;
+        width: fit-content;
+        font-style: italic;
+    }
+    
+}
+/* PC*/
+@media all and (min-width:1100px){
+     h1{
+        font-size: 5em;
+        font-weight: lighter;
+    }
+    h2{
+        font-size: 2em;
+        position: relative;
+        left: 30em;
+        top: -0.2em;
+        width: fit-content;
+        font-style: italic;
+    }
+}
